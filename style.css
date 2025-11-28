@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #8090da 0%, #9d85b6 100%);
+  padding: 20px;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ---- CONTAINER ---- */
+.container {
+  width: 100%;
+  max-width: 900px; /* Aumentei para desktop */
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+}
+
+/* ---- SALDO ---- */
+.saldo-box {
+    background: white url('images/moedas.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.saldo-negativo {
+  color: red;
+}
+
+.saldo-positivo {
+  color: green;
+}
+
+
+/* ---- LISTA ---- */
+#lista-transacoes li {
+  background: #f8f9fa;
+  padding: 18px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border-left: 5px solid #7581b6;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+#lista-transacoes li:hover {
+  background: #f0f0f0;
+  transform: translateX(5px);
+}
+
+/* ---- BOTÕES ---- */
+.botoes-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+  margin: 5px;
+}
+
+.btn:hover {
+  transform: scale(1.06);
+}
+
+.logo {
+  width: 45px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 20px;
+  color: #444;
+  text-align: center;
+}
+
+.ia-box {
+  margin: 20px;
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+}
+
+/* **********************************************************************
+   RESPONSIVIDADE — CELULAR / TABLET
+************************************************************************ */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  #lista-transacoes li {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .saldo-box {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .botoes-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .saldo-box {
+    font-size: 18px;
+  }
+
+  #lista-transacoes li {
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
