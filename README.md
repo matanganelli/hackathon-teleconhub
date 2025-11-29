@@ -14,11 +14,6 @@ O objetivo é oferecer uma plataforma simples para cadastrar transações (gasto
 ## 🚀 Funcionalidades
 
 - Dashboard com saldo atual e lista de transações.  
-- Categorias automáticas para despesas/receitas (Alimentação, Transporte, Serviços, Renda, Outros).  
-- Ações rápidas: entradas fixas, gastos rápidos (Uber, Mercado, etc), pagamento de boleto, recarga de celular.  
-- Armazenamento local / backend para persistência dos dados.  
-- Previsão de quando o saldo acaba baseado nos gastos médios.  
-- Layout responsivo (desktop e mobile).  
 
 ## 🧰 Tecnologias usadas
 
